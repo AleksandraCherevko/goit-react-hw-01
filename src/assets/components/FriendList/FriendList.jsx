@@ -1,5 +1,6 @@
 import friends from "./friends.json";
 import FriendListItem from "../FriendListItem/FriendListItem";
+// import clsx from "clsx";
 
 const FriendsList = () => {
   return (

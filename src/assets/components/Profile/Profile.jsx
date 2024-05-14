@@ -1,3 +1,5 @@
+// import styles from "./Profile.modul.css";
+
 const Profile = ({
   key,
   username,
