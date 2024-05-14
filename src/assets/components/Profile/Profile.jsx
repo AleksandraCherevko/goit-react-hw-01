@@ -1,4 +1,5 @@
 const Profile = ({
+  key,
   username,
   tag,
   location,
