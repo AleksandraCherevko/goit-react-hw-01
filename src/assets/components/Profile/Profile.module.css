@@ -58,12 +58,10 @@
 }
 
 .statsItem:not(:last-child)::after {
-  content: " "; /* Создаем пустое содержимое для псевдоэлемента */
-  position: absolute; /* Устанавливаем позицию элемента как абсолютную */
-  top: 0;
+  content: " ";
+  position: absolute;
   bottom: 0;
-  right: -1px; /* Положение правого края линии */
-  width: 1px; /* Ширина линии */
-  background-color: #000; /* Цвет линии */
-  /* height: 20px; */
+  right: -1px;
+  width: 1px;
+  background-color: #000;
 }

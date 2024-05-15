@@ -1,0 +1,27 @@
+.card {
+  width: 100px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offlineColor {
+  color: red;
+}
+
+.onlineColor {
+  color: green;
+}
+
+.avatar {
+  margin-bottom: 15px;
+}
+
+.name {
+  margin-bottom: 10px;
+}

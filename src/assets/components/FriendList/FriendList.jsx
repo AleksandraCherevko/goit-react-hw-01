@@ -1,10 +1,10 @@
 import friends from "./friends.json";
 import FriendListItem from "../FriendListItem/FriendListItem";
-//
+import css from "./FriendList.module.css";
 
 const FriendsList = () => {
   return (
-    <div>
+    <div className={css.cardList}>
       {friends.map((friend) => {
         return (
           <FriendListItem
@@ -16,12 +16,6 @@ const FriendsList = () => {
         );
       })}
     </div>
-    // <ul>
-    //   {/* Кількість li залежить від кількості об'єктів в масиві */}
-    //   <li>
-    //     <FriendListItem />
-    //   </li>
-    // </ul>
   );
 };
 

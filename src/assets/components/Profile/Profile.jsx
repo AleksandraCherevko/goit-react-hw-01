@@ -1,5 +1,4 @@
 import css from "./Profile.module.css";
-import clsx from "clsx";
 
 const Profile = ({
   key,
