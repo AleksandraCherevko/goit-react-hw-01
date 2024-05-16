@@ -1,11 +1,14 @@
 import css from "./TransactionHistory.module.css";
 import clsx from "clsx";
 
+const evenRowClass = css.evenRow;
+// const hoverRowClass = css.hoverRow;
+
 const TransactionHistory = ({ items }) => {
   return (
     <>
       <div className={css.table}>
-        <table className={css.tableWrap}>
+        <table className={css.table}>
           <thead className={css.tableWrap}>
             <tr>
               <th className={css.tableTitle}>Type</th>
@@ -14,11 +17,14 @@ const TransactionHistory = ({ items }) => {
             </tr>
           </thead>
           <tbody>
-            {items.map((item) => (
-              <tr key={item.id} className={css.column}>
-                <td className={css.type}>{item.type}</td>
-                <td className={css.amount}>{item.amount}</td>
-                <td className={css.currency}>{item.currency}</td>
+            {items.map((item, index) => (
+              <tr
+                key={item.id}
+                className={clsx(index % 2 === 0 && evenRowClass)}
+              >
+                <td>{item.type}</td>
+                <td>{item.amount}</td>
+                <td>{item.currency}</td>
               </tr>
             ))}
           </tbody>

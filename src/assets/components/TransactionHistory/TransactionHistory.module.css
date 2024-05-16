@@ -11,7 +11,11 @@
   border-spacing: 0;
 }
 
-.table th,
+.tableTitle {
+  color: black;
+}
+
+.table .tableTitle,
 .table td {
   padding: 8px;
   text-align: left;
@@ -22,10 +26,10 @@
   background-color: #f2f2f2;
 }
 
-.darkColor {
+.evenRow {
   background-color: #f2f2f2;
 }
 
-.lightColor {
+.hoverRow {
   background-color: #ddd;
 }
