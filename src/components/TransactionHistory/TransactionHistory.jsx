@@ -2,7 +2,6 @@ import css from "./TransactionHistory.module.css";
 import clsx from "clsx";
 
 const evenRowClass = css.evenRow;
-// const hoverRowClass = css.hoverRow;
 
 const TransactionHistory = ({ items }) => {
   return (
