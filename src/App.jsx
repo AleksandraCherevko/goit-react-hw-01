@@ -9,15 +9,9 @@ import transactions from "./components/TransactionHistory/transactions.json";
 function App() {
   return (
     <div>
-      {userData.map((userData) => {
-        return (
-          <>
-            <Profile {...userData} />
-            <FriendList friends={friends} />
-            <TransactionHistory items={transactions} />
-          </>
-        );
-      })}
+      <Profile {...userData} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
